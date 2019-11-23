@@ -1,0 +1,12 @@
+@import "config";
+
+.course {
+  &__form {
+    max-width: $max-width;
+    margin: 0 auto;
+    @media (max-width: $max-width - 1) {
+      padding-right: $gutter;
+      padding-left: $gutter;
+    }
+  }
+}

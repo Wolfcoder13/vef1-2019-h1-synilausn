@@ -1,0 +1,22 @@
+{
+  "name": "h1-synilausn",
+  "version": "1.0.0",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css pages/*.html",
+    "lint": "stylelint *.scss scss/*.scss --syntax scss",
+    "sass": "node-sass --source-map-embed styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
+    "dev": "concurrently npm:sass npm:sass-watch npm:browser-sync"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^4.1.2",
+    "node-sass": "^4.13.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-primer": "^2.2.11"
+  },
+  "dependencies": {}
+}
